@@ -1,7 +1,10 @@
-// Turns the DEFINE_GUID for EventTraceGuid into a const.
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+
 #include "eparser.h"
 #include "TraceSession.h"
 
+// Turns the DEFINE_GUID for EventTraceGuid into a const.
 #define INITGUID
 
 static const GUID OrtProviderGuid = {0x54d81939, 0x62a0, 0x4dc0, {0xbf, 0x32, 0x3, 0x5e, 0xbd, 0xc7, 0xbc, 0xe9}};
